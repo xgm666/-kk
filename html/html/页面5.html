@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数独题目</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body  class="box">
+    <audio id="audio1">
+        <source src="https://home.aigei.com:8443/0-r14/GeiFileLocalStore/b631/src/aud/mp3/8a/8a50b6899a1443e59b17edf2eab54c1b.mp3?download/%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD1_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695859140&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:6-RnPE2ukO7zW_3N5I8AjCsJ2vg=" type="audio/mpeg">
+      </audio>
+      <audio id="audio2">
+        <source src="https://home.aigei.com:8443/0-r14/GeiFileLocalStore/b631/src/aud/mp3/75/75a60df897cf4da295905c8c6ed93fc1.mp3?download/%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD2_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695859800&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:JSQhv1bq6t3GVRkrJpqGLdAvJZk=" type="audio/mpeg">
+      </audio>
+      <audio id="audio3">
+        <source src="https://home.aigei.com:8443/0-r15/GeiFileLocalStore/b61/src/aud/mp3/10/10b9e4d05db146e99dad6e5e259d7668.mp3?download/%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD%E9%85%8D%E4%B9%90+-+%E6%88%91%E7%9A%84%E5%AE%B6%E5%9B%AD_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695859620&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:u_Xnojpgt6fYv5UxX93W-xanFIo=" type="audio/mpeg">
+      </audio>
+      <audio id="audio4">
+        <source src="https://home.aigei.com:8443/0-r14/GeiFileLocalStore/b63/src/aud/mp3/f7/f7a34a42644a4a578c3e140b1b7c154f.mp3?download/%E6%B4%9B%E5%85%8B%E7%8E%8B%E5%9B%BD3_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695860280&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:KfUj7yml6DxLuXV-t7PT1tLQ360=" type="audio/mpeg">
+      </audio>
+      <audio id="audio5">
+        <source src="https://home.aigei.com:8443/0-r16/GeiFileLocalStore/b63/src/aud/mp3/36/36415c6e82f64e938e090ce650eaffd5.mp3?download/%E4%BB%BB%E5%8A%A14_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695861780&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:BRjdEuLk80KZcwKTxzcxUToqH-g=" type="audio/mpeg">
+      </audio>
+      <audio id="audio6">
+        <source src="https://s1.aigei.com/src/aud/mp3/77/7727bbe0be764ee79e3c036985aa6537.mp3?download/%E6%BC%82%E6%B5%AE%E5%AE%AB%E6%AE%BF_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695862140&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:LXQ4wnJwTdHesdsZTySL-dW6lSs=" type="audio/mpeg">
+      </audio>
+      <audio id="audio7">
+        <source src="https://s1.aigei.com/src/aud/mp3/63/63e6499896b146ff82752ce326fb48dc.mp3?download/%E5%B8%9D%E8%BE%BE%E5%B0%94%E4%B9%8B%E7%8E%AF%E4%B8%AD%E5%8C%BA%E3%80%81%E5%B8%9D%E8%BE%BE%E5%B0%94%E4%B9%8B%E7%8E%AF%E4%B8%9C%E5%8C%BA%E3%80%81%E8%AE%B8%E6%84%BF%E5%8F%B0%EF%BC%8C%E5%9C%A3%E6%B9%96_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695862380&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:nAHBIi0v6lw6xv0tDKaQCFIViC4=" type="audio/mpeg">
+      </audio>
+      <audio id="audio8">
+        <source src="https://home.aigei.com:8443/0-r16/GeiFileLocalStore/b631/src/aud/mp3/e4/e4f8f87f35e2473088f0938af4583d3b.mp3?download/%E6%98%9F%E4%B9%8B%E6%89%80%E5%9C%A8_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695860940&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:awIRJ1T73phf6NZ6DbwZ-fc-PTo=" type="audio/mpeg">
+      </audio>
+      <audio id="audio9">
+        <source src="https://home.aigei.com:8443/0-r16/GeiFileLocalStore/b631/src/aud/mp3/b8/b8828cc333dc4af896958bab5ff74451.mp3?download/%E6%98%9F%E4%B9%8B%E6%89%80%E5%9C%A8_%E7%88%B1%E7%BB%99%E7%BD%91_aigei_com.mp3&e=1695861120&token=P7S2Xpzfz11vAkASLTkfHN7Fw-oOZBecqeJaxypL:lWpvBejVIs8v-LzwZ6lypNLSWxQ=" type="audio/mpeg">
+      </audio>
+<p>游戏已运行：<span id="runtime"></span></p>
+<h1>当前为困难模式</h1>
+<img src="./图（8）.png" alt="图片不存在" style="height: 500px;width: 380px;position: absolute;left:750px; top: -40px;;">
+<button class="button2" onclick="fun1()" style="position: absolute; top: 650px; left: 20px;width:200px; height: 50px;
+font-size: 26px;">一键检查</button>
+<button class="button3" onclick="fun2()" style="position: absolute; top: 650px; left:1050px;width:200px; height: 50px;
+font-size: 26px;">点击提示</button>
+<button onclick="generateSudokuGridsConcurrently()" class="button4"    style="position: absolute; top: 650px; left:1340px;width:150px; height: 50px;
+font-size: 26px;">重新生成</button>
+<button id="puzzle1" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第1题</button>
+<button id="puzzle2" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第2题</button>
+<button id="puzzle3" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第3题</button>
+<button id="puzzle4" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第4题</button>
+<button id="puzzle5" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第5题</button>
+<button id="puzzle6" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第6题</button>
+<button id="puzzle7" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第7题</button>
+<button id="puzzle8" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第8题</button>
+<button id="puzzle9" class="button5" style="position: absolute; top: 50px; left: 45%;width:150px; height: 50px;font-size: 26px;">第9题</button>
+<button class="button1" onclick="fun0()" style="position: absolute; top: 350px; left:1340px;width:100px; height: 100px;
+font-size: 26px;">一键解题</button>
+<button class="button6"  style="position: absolute; top: 450px; left: 50px;width:150px; height: 150px;
+font-size: 26px;">提交所有题目</button>
+<button id="openModalBtn" style="position: absolute; top: 180px; left:10px;width:120px; height: 40px;
+font-size: 13px;background-image: linear-gradient(to right, #f7eeee, #297ea8);cursor: pointer;">点我查看功能说明</button>
+<div id="codeModal" class="modal">
+  <div class="modal-content">
+    <h2>功能说明</h2>
+    <textarea id="codeTextarea" rows="10" cols="50" readonly></textarea>    
+    <br>
+    <button id="closeModalBtn">关闭</button>
+  </div>
+</div>
+ <div id="execution-time"></div>
+<div>
+    <button id="button1" onclick="mytable1()" style="position: absolute; margin: auto; top: 50px; left: 1200px;width:50px; height: 50px;
+    font-size: 26px;">1</button>
+    <button id="button2" onclick="mytable2()" style="position: absolute; margin: auto; top: 50px; left: 1250px;width:50px; height: 50px;
+    font-size: 26px;">2</button>
+    <button id="button3" onclick="mytable3()" style="position: absolute; margin: auto; top: 50px; left: 1300px;width:50px; height: 50px;
+    font-size: 26px;">3</button>
+    <button id="button4" onclick="mytable4()" style="position: absolute; margin: auto; top: 100px; left: 1200px;width:50px; height: 50px;
+    font-size: 26px;">4</button>
+    <button id="button5" onclick="mytable5()" style="position: absolute; margin: auto; top: 100px; left: 1250px;width:50px; height: 50px;
+    font-size: 26px;">5</button>
+    <button id="button6" onclick="mytable6()" style="position: absolute; margin: auto; top: 100px; left: 1300px;width:50px; height: 50px;
+    font-size: 26px;">6</button>
+    <button id="button7" onclick="mytable7()" style="position: absolute; margin: auto; top: 150px; left: 1200px;width:50px; height: 50px;
+    font-size: 26px;">7</button>
+    <button id="button8" onclick="mytable8()" style="position: absolute; margin: auto; top: 150px; left: 1250px;width:50px; height: 50px;
+    font-size: 26px;">8</button>
+    <button id="button9" onclick="mytable9()" style="position: absolute; margin: auto; top: 150px; left: 1300px;width:50px; height: 50px;
+    font-size: 26px;">9</button>
+</div>
+ <!-- 数独容器 -->
+ <div id="sudokuContainer"></div>
+ <script src="sudoku_difficult.js"></script>
+</body>
+</html>
